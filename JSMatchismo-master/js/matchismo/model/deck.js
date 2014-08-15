@@ -1,8 +1,7 @@
-/**
- * Created by Administrator on 14-8-1.
- */
+
 (function(){
     'use strict';
+
     function Deck(){
 
     }
@@ -13,19 +12,19 @@
             return this._cards || (this._cards = []);
         },
 
-        addCard: function (card, opt){
+        addCard: function(card, opt){
             opt = opt || {};
-            if (opt.atTop){
+            if (opt.atTop) {
                 this.cards().unshift(card);
-            } else{
+            } else {
                 this.cards().push(card);
             }
         },
 
-        drawRandomCard:function(){
+        drawRandomCard: function(){
             var randomCard,
                 cards = this.cards();
-            if(cards.length){
+            if (cards.length) {
                 var index = parseInt(Math.random() * cards.length, 10);
                 randomCard = cards[index];
                 cards.splice(index, 1);
@@ -33,13 +32,14 @@
             return randomCard;
         }
 
-    }
+    };
 
-    function exports() {
+    function exports(){
         return new Deck();
     }
 
     exports.Deck = Deck;
+
     window.deck = exports;
 
 })();
