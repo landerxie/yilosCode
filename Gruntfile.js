@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                     'newGuo/global/scripts/lib/jquery.mnmenu.min.js': 'newGuo/global/scripts/lib/jquery.mnmenu.js',
                     'newGuo/global/scripts/lib/touchslider.min.js': 'newGuo/global/scripts/lib/touchslider.js',
                     'newGuo/global/scripts/lib/fancybox/jquery.fancybox-1.3.4.pack.min.js': 'newGuo/global/scripts/lib/fancybox/jquery.fancybox-1.3.4.pack.js',
-                    'newGuo/global/scripts/lib/fancybox/jquery.easing-1.3.pack.min.js': 'newGuo/global/scripts/lib/fancybox/jquery.easing-1.3.pack.js',
+                    'newGuo/global/scripts/lib/fancybox/jquery.easing-1.3.pack.min.js': 'newGuo/global/scripts/lib/fancybox/jquery.easing-1.3.pack.js'
                 }
             }
         },
