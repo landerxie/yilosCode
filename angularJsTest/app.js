@@ -3,7 +3,7 @@
  * Created by Administrator on 14-10-8.
  */
 
-var myApp = angular.module('myAPP',['ngMessages']);
+var myApp = angular.module('myAPP',['ngMessages','ngRoute']);
 
 myApp.controller('firstController',function($scope){
     $scope.name = 'lander jioj joijoij';
@@ -33,5 +33,22 @@ myApp.directive('myDirective', function() {
             myLinkText: '@' //绑定策略
         },
         template: '<a href="{{myUrl}}"> {{myLinkText}}</a>'
+    };
+});
+
+myApp.directive('link', function() {
+    return {
+        restrict: 'EA',
+        transclude: true,
+        controller:
+            function($scope, $element, $transclude, $log) {
+                $transclude(function(clone) {
+                    var a = angular.element('<a>');
+                    a.attr('href', clone.text());
+                    a.text(clone.text());
+                    $log.info("Created new a tag in link directive");
+                    $element.append(a);
+                });
+            }
     };
 });
