@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>3D图片环 - by 智能社 - [url]www.zhinengshe.com[/url]</title>
+    <title></title>
     <link href="css/zns_common.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="http://js.tongji.linezing.com/2880049/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2880049/tongji.gif"/></a></noscript>
     <script>
@@ -16,7 +16,8 @@
             var y=0;
 
             var speedX=0;
-            var speedY=0;
+            var speedY=10;
+            var touchArea;
 
             for(var i=1;i<=M;i++)
             {
@@ -52,6 +53,7 @@
 
                 oNewDiv.innerHTML='<div class="img"><span class="over"><span class="shadow"></span></span></div>';
                 oNewDiv=oNewDiv.getElementsByClassName('img')[0];
+                console.log(oNewDiv);
 
                 oNewDiv.style.background='url(ht'+'tp://zhinengshe.com/works/3540/img/'+i+'.jpg)';
 
@@ -63,17 +65,10 @@
                 oNewDiv.style.backgroundSize='100% 100%';
 
                 oDiv.appendChild(oNewDiv.parentNode);
-                (function (){
-                    var oS=document.createElement('script');
-
-                    oS.type='text/javascript';
-                    oS.src='http://www.zhinengshe.com/zpi/zns_demo.php?id=3540';
-
-                    document.body.appendChild(oS);
-                })();
             }
 
-            document.onmousedown=function (ev)
+            touchArea = document.getElementById('znsCom');
+            touchArea.onmousedown=function (ev)
             {
                 var oEvent=ev||event;
                 var mouseStartX=oEvent.clientX;
@@ -87,7 +82,7 @@
 
                 speedX=speedY=0;
 
-                document.onmousemove=function(ev)
+                touchArea.onmousemove=function(ev)
                 {
                     var oEvent=ev||event;
 
@@ -103,10 +98,10 @@
                     lastY=oEvent.clientY;
                 };
 
-                document.onmouseup=function ()
+                touchArea.onmouseup=function ()
                 {
-                    document.onmousemove=null;
-                    document.onmouseup=null;
+                    touchArea.onmousemove=null;
+                    touchArea.onmouseup=null;
 
                     startMove();
                 };
@@ -182,6 +177,7 @@
         overflow:hidden;
         position:fixed;
         bottom:20px;
+        height: 100%;
         text-align:center;
         color:#FFF;
         font-family:Verdana;

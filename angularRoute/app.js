@@ -2,6 +2,7 @@
  * Created by Administrator on 14-10-14.
  */
 var app = angular.module('NewsPub', ['ngRoute']);
+
 function routeConfig($routeProvider){
     $routeProvider.
         when('/', {

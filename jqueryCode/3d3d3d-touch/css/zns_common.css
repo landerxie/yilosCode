@@ -1,6 +1,25 @@
 *{margin:0; padding:0;}
 body{
     background:rgba(2,2,2,1);overflow:hidden;
+    _background-attachment: fixed;
+}
+.znsCom{
+    width:100%;
+    clear:both;
+    overflow:hidden;
+    position:fixed;
+    top: 0;
+    height: 100%;
+    text-align:center;
+    color:#FFF;
+    font-family:Verdana;
+    _position: absolute;
+    _top: expression(document.documentElement.clientHeight - document.getElementById('znsCom').offsetHeight - 20 + "px");
+    z-index:9999;
+}
+.znsCom a{
+    color:#FFF;
+    text-decoration:none;
 }
 #div2 {
     position:absolute; left:50%; top:50%; width:1200px; height:1200px;
@@ -60,4 +79,9 @@ body{
     -ms-transform:scale(1,-1);
     -o-transform:scale(1,-1);
     transform:scale(1,-1);
+}
+.open-link{
+    display: block;
+    height: 100%;
+    width: 100%;
 }
