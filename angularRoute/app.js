@@ -63,7 +63,7 @@ var newsList = [{
     content : 'content 6666666',
     date : new Date()
 },{
-    id : 6,
+    id : 7,
     title : 'title 7777',
     content : 'content 7777777',
     date : new Date()

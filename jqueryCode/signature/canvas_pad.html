@@ -4,7 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
 <style type="text/css">
-#canvas{ border:1px solid #ccc;}
+    #canvas{
+        border:1px solid #ccc;
+    }
+
 </style>
 </head>
 
@@ -141,9 +144,6 @@ var toBitmapURL = (function ($fromCharCode, FF, MAX_LENGTH) {
     }
     var context = canvas.getContext("2d");
     var line1 = canvas.getContext("2d");
-    var line2 = canvas.getContext("2d");
-    var line3 = canvas.getContext("2d");
-    var line4 = canvas.getContext("2d");
     line1.fillStyle = "rgb(0,0,0)";
     line1.beginPath();
     line1.moveTo(0,0);
@@ -151,28 +151,26 @@ var toBitmapURL = (function ($fromCharCode, FF, MAX_LENGTH) {
     line1.lineTo(600,600);
     line1.lineTo(0,1);
     line1.fill();
-    line2.fillStyle = "rgb(0,0,0)";
-    line2.beginPath();
-    line2.moveTo(600,0);
-    line2.lineTo(1,599);
-    line2.lineTo(0,600);
-    line2.lineTo(600,1);
-    line2.fill();
-    line3.fillStyle = "rgb(0,0,0)";
-    line3.beginPath();
-    line3.moveTo(0,300);
-    line3.lineTo(600,300);
-    line3.lineTo(600,301);
-    line3.lineTo(0,301);
-    line3.fill();
-    line4.fillStyle = "rgb(0,0,0)";
-    line4.beginPath();
-    line4.moveTo(300,0);
-    line4.lineTo(300,600);
-    line4.lineTo(301,600);
-    line4.lineTo(301,0);
-    line4.fill();
-
+    line1.beginPath();
+    line1.moveTo(600,0);
+    line1.lineTo(1,599);
+    line1.lineTo(0,600);
+    line1.lineTo(600,1);
+    line1.fill();
+    line1.fillStyle = "rgb(0,0,0)";
+    line1.beginPath();
+    line1.moveTo(0,300);
+    line1.lineTo(600,300);
+    line1.lineTo(600,301);
+    line1.lineTo(0,301);
+    line1.fill();
+    line1.fillStyle = "rgb(0,0,0)";
+    line1.beginPath();
+    line1.moveTo(300,0);
+    line1.lineTo(300,600);
+    line1.lineTo(301,600);
+    line1.lineTo(301,0);
+    line1.fill();
 
     canvas.addEventListener('touchstart', function(e){
         e.preventDefault();
@@ -254,6 +252,9 @@ var toBitmapURL = (function ($fromCharCode, FF, MAX_LENGTH) {
     }, false);
 })();
 
+/*window.onbeforeunload = function(){
+    return "Are you sure to leave?" ;
+}*/
 </script>
 </body>
 </html>
