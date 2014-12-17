@@ -28,3 +28,4 @@ node_modules
 /.idea/
 cube/.idea/
 seaJs/seajs-grunt-build-master/.idea/
+/node_modules/
