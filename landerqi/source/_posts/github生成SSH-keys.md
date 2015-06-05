@@ -107,8 +107,7 @@ To make sure everything is working, you'll now try to SSH into GitHub. When you 
 	```
 	Verify the fingerprint in the message you see matches the following message, then type `yes`:
 	``` bash
-	Hi username! You've successfully authenticated, but GitHub does not
-	# provide shell access.
+	Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 	```
 
 3. If the username in the message is yours, you've successfully set up your SSH key!
