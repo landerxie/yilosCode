@@ -1,6 +1,6 @@
 title: github生成SSH_keys
 date: 2015-06-04 15:24:55
-tags:
+tags: git
 
 ---
 
