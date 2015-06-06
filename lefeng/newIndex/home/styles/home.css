@@ -1,5 +1,18 @@
 html, body { position:relative; z-index:1; min-width:1024px; height:100%; background:#fff;}
 body { min-height:1103px; *height:865px; overflow-x:hidden;/* max-height:1472px; */}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+  overflow:hidden;
+}
+.clearfix {
+  zoom:1; /* for IE6 IE7 */
+}
+
 
 #globalheader { z-index:9998; top:18px; margin:0 auto; }
 
@@ -54,18 +67,30 @@ body { min-height:1103px; *height:865px; overflow-x:hidden;/* max-height:1472px;
 
 /* banner */
 .banner {
-    height:63px;
+    height:93px;
     width: 1004px;
     position: relative;
     margin: 0 auto;
 }
 .second-banner{
-    background-color: rgba(151,118,85,0.3);
     height: 39px;
     z-index: 3;
     position: absolute;
     left: 0;
     right: 0;
+}
+.second-banner .s_b_content{
+    border-bottom: 1px solid #f8f8f8; 
+    width: 884px;
+    margin: 0 auto;
+    margin-left: 280px;
+    background: none!important;
+}
+.second-banner .s_b_content h2{
+    margin-left: 20px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 .banner img { display:block; margin:0 auto; }
 
@@ -98,7 +123,7 @@ body { min-height:1103px; *height:865px; overflow-x:hidden;/* max-height:1472px;
 
 /* homenav */
 #homenav{
-    height: 63px;
+    height: 93px;
     background-color: #000;
     border-bottom: 1px solid #333;
 /*    background: url("../../images/nav_bg.png") repeat-x top;*/
@@ -129,10 +154,9 @@ body { min-height:1103px; *height:865px; overflow-x:hidden;/* max-height:1472px;
 #nav_wrapper {
     display: inline-block;
     float: right;
-    margin-top: 20px;
+    margin-top: 29px;
     position: absolute;
-    height: 40px;
-    *+width:480px!important;
+    height: 37px;
     top: 0;
     line-height: 40px;
     font-size: 14px;
@@ -315,6 +339,134 @@ body { min-height:1103px; *height:865px; overflow-x:hidden;/* max-height:1472px;
     height: 384px;
     width: 472px;
     margin-top: 160px;
+}
+
+/*about*/
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.about .detail {
+    margin-top:100px;
+}
+.about .detail p{
+    color:#999;
+    text-indent: 2em;
+    line-height: 24px;
+    font-size: 13px;
+}
+.about .table-area{
+    margin-top: 50px;
+}
+.about .table-area .sign_title {
+    color: #333;
+    font-size: 16px;
+}
+.about .table-area table {
+    margin-top: 16px;
+    border: 1px solid #f4f4f4;
+    width: 758px;
+    font-size: 14px;
+    color: #333;
+}
+.about .table-area table tr .thead {
+    width: 148px;
+    padding-left: 20px;
+    background: #f8f8f8;
+    color: #666;
+}
+.about .table-area table td {
+    border-bottom: 1px dotted #e6e6e6;
+}
+.about .table-area table tr .content_t {
+    width: 558px;
+}
+.about .table-area table tr .content_t{
+    padding: 14px 14px 14px 30px;
+}
+.about .img-area{
+    margin-top: 50px;
+}
+.address .img-area{
+    margin-top: 100px;
+}
+.address .img-area img{
+    width:100%;
+}
+.address .detail span{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.address .detail span:first-child{
+    margin-top: 30px;
+}
+
+/*koubei*/
+.koubei .img-area{
+    margin-top: 100px;
+}
+.koubei .img-area img{
+    width: 800px;
+}
+/*case*/
+.case ul{
+    margin-top: 80px;
+}
+.case ul li{
+    position: relative;
+    border-bottom: 1px solid #f8f8f8;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.case ul li div{
+    float: left;
+}
+.case ul li .left{
+    width: 300px;
+}
+.case ul li .left img{
+    width: 100%;
+}
+.case ul li .right{
+    margin-left: 20px;
+}
+.case ul li .right .detail{
+
+}
+.case ul li .right a{
+    position: absolute;
+    display: block;
+    bottom: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f36f20;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.case ul li .right a:hover{
+    background-color: #f32200;
+    text-decoration: none;
+}
+.case ul li .right a:active{
+    background-color: #f36f20;
+}
+.case-01 .img-area span{
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.case-01 .img-area{
+    margin-top: 80px;
+}
+.case-01 .img-area img{
+    margin: 0 auto;
+    width: 600px;
+    display: block;
+    margin-top: 10px;
 }
 
 
