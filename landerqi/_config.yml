@@ -67,7 +67,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: light
+theme: lightqi
 
 # duoshuo comment
 duoshuo_shortname: landerqi
