@@ -4,18 +4,22 @@
 
 # Site
 title: Landerqi Blog
-subtitle:
-description:
+subtitle: 格调、风度、和谐、节奏之美均源自简洁...
+description: 格调、风度、和谐、节奏之美均源自简洁...
 author: Landerqi
-language:
+language: zh-CN
+email: landerqi@126.com
 timezone:
 
-# URL
+# URL 这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://landerqi.github.io/
+url: http://landerqi.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
 
 # Directory
 source_dir: source
@@ -27,7 +31,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
+# Writing 文章布局、写作格式的定义，不修改
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
