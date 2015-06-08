@@ -15,13 +15,9 @@ $ ls -al ~/.ssh
 - id_ecdsa.pub
 - id_ed25519.pub
 - id_rsa.pub
-
-
 <br>
-**********
-
 <!-- more -->
-
+**********
 ### 第二步： 生成新的SSH key：
 
 1. 在终端输入以下指令(mac),如果是windows可以用Git bash. 引号中输入你的github账号邮箱地址.
