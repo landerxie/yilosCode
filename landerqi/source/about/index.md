@@ -14,19 +14,19 @@ date: 2015-06-08 10:25:07
 ###SNS
 --------------------
 `微信`：landerqi
-`微博`：http://weibo.com/104141990
-`知乎`：http://www.zhihu.com/people/xie-qi-10
-`V2EX`：http://www.v2ex.com/member/landerqi
-`Quor`：http://www.quora.com/Qi-Xie-2
-`Drib`：https://dribbble.com/landerqi
-`Gith`：https://github.com/landerqi
+`微博`：<http://weibo.com/104141990>
+`知乎`：<http://www.zhihu.com/people/xie-qi-10>
+`V2EX`：<http://www.v2ex.com/member/landerqi>
+`Quor`：<http://www.quora.com/Qi-Xie-2>
+`Drib`：<https://dribbble.com/landerqi>
+`Gith`：<https://github.com/landerqi>
 
 <br>
 ###Contact
 --------------------
-`Email_1`：landerqi@126.com
-`Email_2`：landerqi@qq.com
-`Email_3`：landerqi@gmail.com
+`Email_1`：<landerqi@126.com>
+`Email_2`：<landerqi@qq.com>
+`Email_3`：<landerqi@gmail.com>
 
 <br>
 <br>
