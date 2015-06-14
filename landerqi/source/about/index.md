@@ -7,7 +7,8 @@ date: 2015-06-08 10:25:07
 --------------------------
 `姓名`：谢奇
 `生日`：1990-04-14 [金牛座](http://baike.baidu.com/link?url=JrhSFzBVLNszRJBDqXyxwzq4hIH4qKRxG3iLyjnT3-y1GtL9bVlR3Ae-HKjWwupYvjkBIGpcq2RoHK9wYMaVuX1_fodALWvzIWN-Le2_2OK)
-`行业`：IT，前端开发
+`行业`：IT－前端开发
+`爱好`：编程、钢琴、摄影
 `主页`：http://landerqi.com
 
 <br>
@@ -27,6 +28,7 @@ date: 2015-06-08 10:25:07
 `Email_1`：<landerqi@126.com>
 `Email_2`：<landerqi@qq.com>
 `Email_3`：<landerqi@gmail.com>
+`phoneNm`：18503014025
 
 <br>
 <br>
