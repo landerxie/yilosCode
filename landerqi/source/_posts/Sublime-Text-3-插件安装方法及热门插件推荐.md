@@ -90,6 +90,11 @@ Prefixr，CSS3 私有前缀自动补全插件
 ```
 
 <br>
+
+###AutoFileName
+自动补全文件(目录)名，很重要的插件
+<br>
+
 ###其他语法支持
 如果有一个 SublimeText 本身所带语言包不包含的语言，它就无法显示适当的语法高亮。这些语言包括 LESS，Sass，SCSS，Styls 和 Jade（或其它）。如果您正在使用这些语言，你可能要安装它们的语法插件。
 - [LESS](https://github.com/danro/LESS-sublime)
