@@ -66,6 +66,18 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
+# plugins:
+# - hexo-generator-feed
+# - hexo-generator-sitemap
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+    path: sitemap.xml
+
 ## Themes: http://hexo.io/themes/
 theme: lightqi
 
