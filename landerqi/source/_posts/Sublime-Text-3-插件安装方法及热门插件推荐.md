@@ -68,7 +68,6 @@ JS代码格式化插件。
 
 ###Sublime Prefixr([Github](https://github.com/wbond/sublime_prefixr))
 Prefixr，CSS3 私有前缀自动补全插件
-![](http://7xjl5i.com1.z0.glb.clouddn.com/qdb32ee22ba222e8ab566f3cb7f9269eb8.png)
 
 <br>
 ###[Alignment](https://sublime.wbond.net/packages/Alignment)([Github](https://github.com/wbond/sublime_alignment))
