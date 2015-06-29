@@ -90,3 +90,8 @@ deploy:
  type: git
  repo: git@github.com:landerqi/landerqi.github.io.git
  branch: master
+
+# deploy:
+#   type: git
+#   repo: git@gitcafe.com:landerqi/landerqi.git
+#   branch: gitcafe-pages
