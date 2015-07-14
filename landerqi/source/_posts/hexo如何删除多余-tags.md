@@ -1,4 +1,4 @@
-title: hexo如何删除多余标签(tags)
+title: hexo如何删除多余标签、及同时添加多个标签(tags)
 date: 2015-06-09 00:37:43
 tags: hexo
 ---
@@ -7,6 +7,12 @@ tags: hexo
 ```bash
 hexo clean
 ```
-就行了！记录一下：）
+就行了！
+
+####__同时添加多个标签__:
+`[xxx,xxxxx]`
+
+记录一下：）
+
 
 <!-- more -->
