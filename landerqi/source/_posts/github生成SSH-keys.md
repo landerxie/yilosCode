@@ -65,6 +65,10 @@ $ ls -al ~/.ssh
 	``` bash
 	eval `ssh-agent -s`
 	```
+	或者(优先)
+	``` bash
+	eval "$(ssh-agent)"
+	```
 
 2. 把你生成的SSH key 添加至 ssh-agent:	
 	``` bash
