@@ -4,6 +4,10 @@ tags: git
 
 ---
 
+github生成SSH
+
+<!-- more -->
+<!-- toc -->
 ### 第一步：检查电脑里面是否存在SSH keys. 打开 Git Bash 输入：
 
 ``` bash
@@ -15,9 +19,9 @@ $ ls -al ~/.ssh
 - id_ecdsa.pub
 - id_ed25519.pub
 - id_rsa.pub
-<br>
-<!-- more -->
-**********
+
+
+
 ### 第二步： 生成新的SSH key：
 
 1. 在终端输入以下指令(mac),如果是windows可以用Git bash. 引号中输入你的github账号邮箱地址.
@@ -43,11 +47,9 @@ $ ls -al ~/.ssh
 	Your identification has been saved in /Users/you/.ssh/id_rsa.
 	# Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 	# The key fingerprint is:
-	# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com	
+	# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
 	```
 
-<br>
-------------------------------
 
 ### 第三步： 添加你的key至ssh-agent：
 配置 [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent) 程序来使用你生成的SSH key:
@@ -70,15 +72,11 @@ $ ls -al ~/.ssh
 	eval "$(ssh-agent)"
 	```
 
-2. 把你生成的SSH key 添加至 ssh-agent:	
+2. 把你生成的SSH key 添加至 ssh-agent:
 	``` bash
 	$ ssh-add ~/.ssh/id_rsa
 	```
 
-
-
-<br>
-------------------------------
 
 ### 第四步： 把你的 SSH key 添加到你的 github 账号
 用你的 SSH key 配置 github 账号:
@@ -89,8 +87,6 @@ $ ls -al ~/.ssh
 
 在github账号设置里面找到add ssh key; title随意添写，key复制进去。
 
-<br>
----------------------
 
 ### 第五步： 测试连接
 
@@ -118,7 +114,7 @@ $ ls -al ~/.ssh
 如果你收到了拒绝访问的信息 "access denied," [you can read these instructions for diagnosing the issue](https://help.github.com/articles/error-permission-denied-publickey/).
 
 如果你想从HTTPS转换到SSH，你将需要更新你的远程仓库 URLs.
-If you're switching from HTTPS to SSH, you'll now need to update your remote repository URLs. 
+If you're switching from HTTPS to SSH, you'll now need to update your remote repository URLs.
 
 更多信息
 For more information, see [Changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/).

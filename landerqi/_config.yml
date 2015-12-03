@@ -78,6 +78,10 @@ feed:
 sitemap:
     path: sitemap.xml
 
+#文章目录
+toc:
+    maxDepth: 3
+
 ## Themes: http://hexo.io/themes/
 theme: lightqi
 
