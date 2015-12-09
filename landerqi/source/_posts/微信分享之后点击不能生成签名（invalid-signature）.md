@@ -7,10 +7,8 @@ tags: 微信
 ![获取签名代码](http://7xjl5i.com1.z0.glb.clouddn.com/wxYY图片20151106164818.png?imageView2/2/w/600)
 
 <!-- more -->
-
 后来发现直接点Url进入是可以调用分享接口正常分享的，可以从分享之后的页面点进去却不能分享，错误显示：
 ![签名错误提示](http://7xjl5i.com1.z0.glb.clouddn.com/wx855310967496113415.png?imageView2/2/w/300)
-
 
 开始我们以为是签名错误，结果用[签名校验工具](http://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=jsapisign)校验，发现生成的签名并没有问题。而后，我们把分享之后的`url` alert出来，发现微信自己在`url`后面加了一些参数（from=singlemessage&isappinstalled=0）：
 ![分享之后url](http://7xjl5i.com1.z0.glb.clouddn.com/wx10309671615601412.png?imageView2/2/w/300)

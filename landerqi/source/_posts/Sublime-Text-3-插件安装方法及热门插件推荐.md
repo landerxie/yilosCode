@@ -16,7 +16,6 @@ __preferences-> User Settings__
 
 ```
 <!-- more -->
-<br>
 
 ##插件安装
 
@@ -101,4 +100,3 @@ Prefixr，CSS3 私有前缀自动补全插件
 - [SCSS](https://github.com/MarioRicalde/SCSS.tmbundle)
 - [Styls](https://github.com/billymoon/Stylus)
 - [Jade](https://github.com/P233/Jade-Snippets-for-Sublime-Text-2)
-

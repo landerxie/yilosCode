@@ -15,7 +15,6 @@
             this._cards.push(card);
         }
     }
-
     CardMatchingGame.prototype = {
 
         score: function(){
@@ -51,7 +50,7 @@
                 card.isFaceUp = !card.isFaceUp;
             }
         }
-    
+
     };
 
     function exports(opt){

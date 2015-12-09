@@ -4,12 +4,12 @@ tags: git
 
 ---
 
-github生成SSH
+该文章将向大家详细介绍如何生成github SSH keys
 
 <!-- more -->
 <!-- toc -->
-### 第一步：检查电脑里面是否存在SSH keys. 打开 Git Bash 输入：
-
+### 第一步：检查电脑里面是否存在SSH keys
+__打开 Git Bash 输入：__
 ``` bash
 $ ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
@@ -20,9 +20,7 @@ $ ls -al ~/.ssh
 - id_ed25519.pub
 - id_rsa.pub
 
-
-
-### 第二步： 生成新的SSH key：
+### 第二步：生成新的SSH key
 
 1. 在终端输入以下指令(mac),如果是windows可以用Git bash. 引号中输入你的github账号邮箱地址.
 	``` bash
@@ -51,7 +49,7 @@ $ ls -al ~/.ssh
 	```
 
 
-### 第三步： 添加你的key至ssh-agent：
+### 第三步： 添加你的key至ssh-agent
 配置 [ssh-agent](https://en.wikipedia.org/wiki/Ssh-agent) 程序来使用你生成的SSH key:
 
 如果你安装了[GitHub for Windows](https://windows.github.com/), 你可以用它来克服仓库，这样不需要使用SSH keys。它还自带了Git Bash工具，在windows平台Git bash可以更好的运行git命令。
