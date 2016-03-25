@@ -114,5 +114,12 @@ $ ls -al ~/.ssh
 如果你想从HTTPS转换到SSH，你将需要更新你的远程仓库 URLs.
 If you're switching from HTTPS to SSH, you'll now need to update your remote repository URLs.
 
+__之前博客从github迁移到了gitcafe, gitcafe之后被coding收购, 所以想把博客迁移至coding. 可是在添加ssh key的时候, 执行`ssh -T git@coding.net`一直报错：__
+
+```
+ssh: connect to host coding.net port 22: Connection refused
+```
+__一直在搜索解决方案，没有找到好的解决办法，最后发现coding的page服务已经开始按天收费了，所以还是默默的把blog迁回了github，毕竟github是最稳定的。__
+
 更多信息
 For more information, see [Changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/).
