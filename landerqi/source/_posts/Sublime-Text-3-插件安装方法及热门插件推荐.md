@@ -1,6 +1,6 @@
 title: Sublime Text 3 插件安装方法及热门插件推荐
 date: 2015-06-16 23:15:40
-tags: [开发工具,前端]
+tags: [工具,前端]
 ---
 之前工作的时候一直用的Webstorm（前端开发神器）。在性能高的电脑上用Webstorm挺好的，可是Webstorm在我的macbook air运行起来非常卡。所以决定使用一下Sublime Text :)
 
