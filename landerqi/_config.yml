@@ -91,9 +91,15 @@ duoshuo_shortname: landerqi
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-   type: git
+-  type: git
    repo: git@github.com:landerqi/landerqi.github.io.git
    branch: master
+
+-  type: git
+   # git 仓库的地址。
+   repo: https://git.coding.net/xQ1_/xQ1_.git
+   # 分支名称。
+   branch: coding-pages
 
 # deploy:
 #   type: git
